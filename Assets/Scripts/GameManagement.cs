@@ -6,18 +6,62 @@ using UnityEngine.SceneManagement;
 
 public class GameManagement : MonoBehaviour
 {
+    public static GameManagement Instance;
+
+    public GameObject startMessage;
     public GameObject gameOverPanel;
     public GameObject darkBackground;
     public CanvasGroup darkCanvasGroup;
     public TextMeshProUGUI finalScoreText;
+    public bool isGameStarted = false;
+    public bool isGameOver = false;
+
+    private void Awake()
+    {
+        Instance = this;
+    }
+
+    void Start()
+    {
+        Time.timeScale = 0f;
+    }
+
+    public void StartGame()
+    {
+        if (startMessage != null)
+            StartCoroutine(FadeOutStartMessage());
+        Time.timeScale = 1f;
+    }
+
+    IEnumerator FadeOutStartMessage()
+    {
+        CanvasGroup cg = startMessage.GetComponent<CanvasGroup>();
+        if (cg == null)
+            cg = startMessage.AddComponent<CanvasGroup>();
+
+        float duration = 0.5f;
+        float t = 0;
+
+        while (t < duration)
+        {
+            t += Time.unscaledDeltaTime;
+            cg.alpha = Mathf.Lerp(1f, 0f, t / duration);
+            yield return null;
+        }
+
+        cg.alpha = 0f;
+        startMessage.SetActive(false);
+    }
+
 
     public void GameOver()
     {
+        isGameOver = true;
         Time.timeScale = 0f;
 
         if (finalScoreText != null)
         {
-            finalScoreText.text = "Your Score: " + Score.Instance.GetScore();
+            finalScoreText.text = "Score: " + Score.Instance.GetScore();
         }
 
         if (darkBackground != null)
@@ -25,6 +69,7 @@ public class GameManagement : MonoBehaviour
 
         if (gameOverPanel != null)
             gameOverPanel.SetActive(true);
+
     }
 
     IEnumerator FadeInDarkBackground()

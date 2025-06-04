@@ -44,6 +44,5 @@ public class Floating_MoveMent : MonoBehaviour
                 img.color = new Color(0.6f, 0f, 1f, 0.2f);
                 break;
         }
-        Debug.Log("Color Was Selected : " + gameObject.tag);
     }
 }

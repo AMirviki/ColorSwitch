@@ -14,9 +14,26 @@ public class Player : MonoBehaviour
 
     void Update()
     {
+        if(GameManagement.Instance.isGameOver)
+        {
+            return;
+        }
+        if (!GameManagement.Instance.isGameStarted)
+        {
+            if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
+            {
+                GameManagement.Instance.StartGame();
+                rb.velocity = Vector2.up * JumpForce;
+            }
+
+            return; 
+        }
+
         if (Input.GetKeyDown(KeyCode.Space))
         {
             rb.velocity = Vector2.up * JumpForce;
-        };
+        }
     }
+
+
 }
