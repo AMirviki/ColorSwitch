@@ -48,6 +48,8 @@ public class PlayerColor : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        Debug.Log("Collided with: " + collision.name + " | tag: " + collision.tag);
+
         if (collision.tag == "ColorChanger")
         {
             SetRandomColor();
@@ -63,7 +65,12 @@ public class PlayerColor : MonoBehaviour
             return;
         }
 
-        if (collision.tag!= CurrentColor && collision.tag!= "Ignore")
+        if (collision.tag == "Score")
+        {
+            return;
+        }
+
+        if (collision.tag != CurrentColor && collision.tag != "Ignore")
         {
             FindObjectOfType<GameManagement>().GameOver();
         }

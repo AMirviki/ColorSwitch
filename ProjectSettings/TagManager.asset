@@ -9,6 +9,7 @@ TagManager:
   - Purple
   - Pink
   - ColorChanger
+  - Score
   layers:
   - Default
   - TransparentFX
@@ -16,9 +17,9 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
+  - Back_Ground
+  - CIrcle_Floating
+  - GameObject
   - 
   - 
   - 
@@ -45,4 +46,19 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: BackGround
+    uniqueID: 3009181131
+    locked: 0
+  - name: Obstacle_BackGround
+    uniqueID: 3198210627
+    locked: 0
+  - name: Game_Object
+    uniqueID: 2215186331
+    locked: 0
+  - name: Player
+    uniqueID: 1885742583
+    locked: 0
+  - name: Ui
+    uniqueID: 2133941821
     locked: 0

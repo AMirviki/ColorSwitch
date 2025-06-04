@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: aeac7de8eb3d55146a15dcf4f4ba622e
+guid: 7a6935e2a6f26b641b5d5d2613c469da
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -43,9 +43,9 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -95,91 +95,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: Circle_Router_0
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 514
-        width: 366
-        height: 364
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0f1f4ca558d24f44799620072667c759
-      internalID: -957041268
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Circle_Router_1
-      rect:
-        serializedVersion: 2
-        x: 146
-        y: 514
-        width: 366
-        height: 364
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 69c89c0404be85947ab2424190b63851
-      internalID: -1032419356
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Circle_Router_2
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 145
-        width: 366
-        height: 369
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6758a6722ef4a8640a8fa434ef1f989c
-      internalID: 130615970
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Circle_Router_3
-      rect:
-        serializedVersion: 2
-        x: 146
-        y: 145
-        width: 366
-        height: 369
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a272902db393f924eb189b9b0081d2e6
-      internalID: -1116506945
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
@@ -190,15 +106,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      Blue_Slice: -1462892514
-      Circle_Router_0: -957041268
-      Circle_Router_1: -1032419356
-      Circle_Router_2: 130615970
-      Circle_Router_3: -1116506945
-      Pink_Slice: -571234208
-      Purple_Slice: -393829032
-      Yellow_Slice: -207297020
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
