@@ -61,7 +61,7 @@ public class GameManagement : MonoBehaviour
 
         if (finalScoreText != null)
         {
-            finalScoreText.text = "Score: " + Score.Instance.GetScore();
+            finalScoreText.text = "Best Score: " + Score.Instance.GetBestScore();
         }
 
         if (darkBackground != null)
@@ -93,11 +93,12 @@ public class GameManagement : MonoBehaviour
 
     public void Retry()
     {
+        Score.Instance.ResetScore();
         Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
-    public void Quit()
+    public void MainMenu()
     {
         Time.timeScale = 1f;
         SceneManager.LoadScene("MainMenu");

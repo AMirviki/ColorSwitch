@@ -18,7 +18,7 @@ public class PlayerColor : MonoBehaviour
     public void SetRandomColor()
     {
         int i = Random.Range(0, 4);
-        switch(i)
+        switch (i)
         {
             case 0: CurrentColor = "Pink"; sr.color = new Color(1f, 0.07f, 0.49f); break;
             case 1: CurrentColor = "Blue"; sr.color = new Color(0f, 0.82f, 0.9f); break;
